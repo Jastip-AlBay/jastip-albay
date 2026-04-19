@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jastip Me Gacoan Albay - Bone Bolango</title>
+    <title>Jastip Me Gacoan Albay - Kampus 4 UNG</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Poppins', sans-serif; }
         .font-title { font-family: 'Bangers', cursive; letter-spacing: 1px; }
-        .bg-gacoan { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center; }
+        .bg-gacoan { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=2070&auto=format&fit=crop'); 
+            background-size: cover; 
+            background-position: center; 
+        }
         .card-menu { transition: transform 0.3s ease; border-left: 5px solid #ef4444; }
         .card-menu:hover { transform: scale(1.02); }
     </style>
@@ -17,32 +21,40 @@
 <body class="bg-yellow-50 text-gray-900">
 
     <header class="bg-gacoan h-screen flex flex-col items-center justify-center text-center text-white px-6">
-        <h1 class="text-5xl md:text-7xl font-title text-yellow-400 mb-2 drop-shadow-lg">JASTIP ME GACOAN ALBAY</h1>
-        <p class="text-xl md:text-2xl font-semibold mb-6 text-red-500 bg-white px-4 py-1 rounded-full shadow-lg">Gak Perlu Antre, Gak Perlu Kepanasan!</p>
+        <h1 class="text-5xl md:text-7xl font-title text-yellow-400 mb-2 drop-shadow-lg uppercase tracking-wider">JASTIP ME GACOAN ALBAY</h1>
+        <p class="text-xl md:text-2xl font-semibold mb-6 text-red-500 bg-white px-4 py-1 rounded-full shadow-lg">Khusus Area Kampus 4 UNG!</p>
         <p class="max-w-xl text-lg mb-8 leading-relaxed italic">
-            "Lagi kuliah di UNG atau lagi kerja di Bone Bolango tapi ngidam pedasnya Gacoan? Jangan siksa diri panas-panasan ke kota. Biar Albay yang antre, kamu yang makan enak!"
+            "Panas-panasan ke kota cuma buat antre Gacoan? Jangan siksa dirimu! Biar Albay yang antre, kamu tinggal duduk manis di kampus dan jemput pesananmu tepat waktu."
         </p>
-        <a href="#menu" class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-full text-xl transition duration-300 shadow-2xl animate-bounce">
-            LIHAT MENU & PESAN SEKARANG
+        <a href="#jadwal" class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-full text-xl transition duration-300 shadow-2xl animate-bounce">
+            CEK JADWAL & MENU
         </a>
     </header>
 
-    <section class="py-12 bg-red-600 text-white">
-        <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-8 text-center">
-            <div class="border-2 border-dashed border-yellow-300 p-6 rounded-2xl">
-                <h3 class="font-title text-3xl mb-2">TITIK JEMPUT 1</h3>
-                <p class="text-xl font-bold">Depan Kampus 4 UNG Bonebol</p>
-                <p class="text-yellow-200 mt-2">Jam 11:00 - 13:00 WITA</p>
+    <section id="jadwal" class="py-16 bg-red-600 text-white px-4">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="border-4 border-dashed border-yellow-300 p-8 rounded-3xl bg-red-700 shadow-2xl">
+                <h3 class="font-title text-4xl mb-4 text-yellow-400">TITIK JEMPUT TUNGGAL</h3>
+                <p class="text-2xl font-bold mb-1">Depan Kampus 4 UNG Bone Bolango</p>
+                <p class="text-lg text-yellow-200 mb-8 font-semibold italic">Hari Operasional: Senin s/d Sabtu</p>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white text-red-700 p-6 rounded-2xl shadow-lg transform rotate-1">
+                        <p class="font-bold text-lg uppercase tracking-widest border-b-2 border-red-200 pb-2 mb-2">Sesi Siang</p>
+                        <p class="text-4xl font-title">11:00 - 13:00</p>
+                        <p class="text-sm font-bold">WITA</p>
+                    </div>
+                    <div class="bg-white text-red-700 p-6 rounded-2xl shadow-lg transform -rotate-1">
+                        <p class="font-bold text-lg uppercase tracking-widest border-b-2 border-red-200 pb-2 mb-2">Sesi Sore</p>
+                        <p class="text-4xl font-title">16:00 - 18:00</p>
+                        <p class="text-sm font-bold">WITA</p>
+                    </div>
+                </div>
             </div>
-            <div class="border-2 border-dashed border-yellow-300 p-6 rounded-2xl">
-                <h3 class="font-title text-3xl mb-2">TITIK JEMPUT 2</h3>
-                <p class="text-xl font-bold">Pusat Kuliner Center Point</p>
-                <p class="text-yellow-200 mt-2">Jam 16:00 - 18:00 WITA</p>
-            </div>
+            <p class="mt-8 text-sm font-bold bg-yellow-400 text-red-800 py-3 rounded-xl inline-block px-8 shadow-md">
+                ⚠️ PENGINGAT: Tidak Melayani Antar ke Rumah / Kos.
+            </p>
         </div>
-        <p class="text-center mt-6 text-sm font-light italic text-yellow-100 px-4">
-            *Catatan: Kami tidak mengantar ke rumah. Pesanan diambil di lokasi titik jemput di atas ya!
-        </p>
     </section>
 
     <section id="menu" class="py-16 px-4 max-w-5xl mx-auto">
@@ -56,30 +68,26 @@
                 <div class="space-y-4">
                     <div class="card-menu bg-white p-4 rounded-xl shadow-sm flex justify-between">
                         <div>
-                            <p class="font-bold text-lg">Mie Suit</p>
-                            <p class="text-xs text-gray-500 italic">Gurih tidak pedas</p>
+                            <p class="font-bold text-lg text-red-700">Mie Suit</p>
+                            <p class="text-xs text-green-600 italic font-semibold">Gurih tidak pedas</p>
                         </div>
                         <span class="font-bold text-red-600">Rp 15k</span>
                     </div>
                     <div class="card-menu bg-white p-4 rounded-xl shadow-sm">
-                        <div class="flex justify-between">
-                            <p class="font-bold text-lg">Mie Hompimpa (Pedas Manis)</p>
-                        </div>
-                        <div class="flex justify-between mt-2 text-sm">
+                        <p class="font-bold text-lg text-red-700">Mie Hompimpa (Pedas Manis)</p>
+                        <div class="flex justify-between mt-2 border-t pt-2">
                             <span>Level 0-4</span> <span class="font-bold text-green-600">Rp 15k</span>
                         </div>
-                        <div class="flex justify-between text-sm">
+                        <div class="flex justify-between">
                             <span>Level 6-8</span> <span class="font-bold text-green-600">Rp 16k</span>
                         </div>
                     </div>
                     <div class="card-menu bg-white p-4 rounded-xl shadow-sm">
-                        <div class="flex justify-between">
-                            <p class="font-bold text-lg">Mie Gacoan (Pedas Asin)</p>
-                        </div>
-                        <div class="flex justify-between mt-2 text-sm">
+                        <p class="font-bold text-lg text-red-700">Mie Gacoan (Pedas Asin)</p>
+                        <div class="flex justify-between mt-2 border-t pt-2">
                             <span>Level 0-4</span> <span class="font-bold text-green-600">Rp 15k</span>
                         </div>
-                        <div class="flex justify-between text-sm">
+                        <div class="flex justify-between">
                             <span>Level 6-8</span> <span class="font-bold text-green-600">Rp 16k</span>
                         </div>
                     </div>
@@ -91,20 +99,20 @@
                     <span class="p-2 bg-yellow-500 text-white rounded-lg">🥟</span> DIMSUM
                 </h3>
                 <div class="space-y-4">
-                    <div class="card-menu bg-white p-4 rounded-xl shadow-sm flex justify-between">
-                        <span>Siomay</span> <span class="font-bold text-red-600">Rp 14k</span>
+                    <div class="card-menu bg-white p-4 rounded-xl shadow-sm flex justify-between items-center">
+                        <span class="font-bold text-red-700">Siomay</span> <span class="font-bold text-red-600">Rp 14k</span>
                     </div>
-                    <div class="card-menu bg-white p-4 rounded-xl shadow-sm flex justify-between">
-                        <span>Udang Rambutan</span> <span class="font-bold text-red-600">Rp 14k</span>
+                    <div class="card-menu bg-white p-4 rounded-xl shadow-sm flex justify-between items-center">
+                        <span class="font-bold text-red-700">Udang Rambutan</span> <span class="font-bold text-red-600">Rp 14k</span>
                     </div>
-                    <div class="card-menu bg-white p-4 rounded-xl shadow-sm flex justify-between">
-                        <span>Udang Keju</span> <span class="font-bold text-red-600">Rp 14k</span>
+                    <div class="card-menu bg-white p-4 rounded-xl shadow-sm flex justify-between items-center">
+                        <span class="font-bold text-red-700">Udang Keju</span> <span class="font-bold text-red-600">Rp 14k</span>
                     </div>
-                    <div class="card-menu bg-white p-4 rounded-xl shadow-sm flex justify-between">
-                        <span>Lumpia Udang</span> <span class="font-bold text-red-600">Rp 14k</span>
+                    <div class="card-menu bg-white p-4 rounded-xl shadow-sm flex justify-between items-center">
+                        <span class="font-bold text-red-700">Lumpia Udang</span> <span class="font-bold text-red-600">Rp 14k</span>
                     </div>
-                    <div class="card-menu bg-white p-4 rounded-xl shadow-sm flex justify-between">
-                        <span>Pangsit Goreng</span> <span class="font-bold text-red-600">Rp 15k</span>
+                    <div class="card-menu bg-white p-4 rounded-xl shadow-sm flex justify-between items-center">
+                        <span class="font-bold text-red-700">Pangsit Goreng</span> <span class="font-bold text-red-600">Rp 15k</span>
                     </div>
                 </div>
             </div>
@@ -112,24 +120,23 @@
     </section>
 
     <section class="py-20 bg-yellow-400 text-center px-4">
-        <h2 class="text-4xl font-title text-red-700 mb-4">UDAH NGIDAM BANGET?</h2>
+        <h2 class="text-4xl font-title text-red-700 mb-4 tracking-wider">ORDER SEKARANG!</h2>
         <p class="text-lg text-red-800 mb-8 max-w-lg mx-auto font-semibold">
-            Klik tombol di bawah untuk kirim pesananmu via WhatsApp. Slot jastip terbatas setiap harinya!
+            Slot jastip harian terbatas untuk menjaga kualitas rasa. Klik tombol di bawah sebelum kehabisan!
         </p>
-        <a <a href="https://api.whatsapp.com/send?phone=6282292439155&text=Halo%20Jastip%20Albay,%20saya%20mau%20order%20Gacoan!" 
-   target="_blank" 
-   rel="noopener noreferrer"
-   class="bg-red-600 hover:bg-red-700 text-white font-bold py-5 px-12 rounded-full text-2xl shadow-2xl transition duration-300 inline-block">
-    GAS ORDER SEKARANG 🔥
-</a>
+        <a href="https://api.whatsapp.com/send?phone=6282292439155&text=Halo%20Jastip%20Albay,%20saya%20mau%20order%20Gacoan%20untuk%20jemput%20di%20Kampus%204!" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="bg-red-600 hover:bg-red-700 text-white font-bold py-5 px-12 rounded-full text-2xl shadow-2xl transition duration-300 inline-block transform hover:scale-110">
+           PESAN VIA WHATSAPP 🔥
         </a>
     </section>
 
-    <footer class="bg-gray-900 text-gray-400 py-8 text-center">
-        <p class="text-lg font-bold text-white mb-2">JASTIP ME GACOAN ALBAY</p>
-        <p class="text-sm px-6">Bone Bolango - Gorontalo</p>
-        <div class="mt-4 border-t border-gray-800 pt-4 text-xs">
-            &copy; 2026 Powered by Jastip Albay. Bukan Official dari Mie Gacoan.
+    <footer class="bg-gray-900 text-gray-400 py-10 text-center">
+        <p class="text-2xl font-title text-white mb-2 tracking-widest uppercase">JASTIP ME GACOAN ALBAY</p>
+        <p class="text-sm px-6">Sahabat Mahasiswa UNG Bone Bolango</p>
+        <div class="mt-6 border-t border-gray-800 pt-6 text-[10px] tracking-widest text-gray-500 uppercase">
+            &copy; 2026 Jastip Albay | Melayani Senin - Sabtu
         </div>
     </footer>
 
